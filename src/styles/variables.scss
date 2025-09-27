@@ -6,6 +6,8 @@ $card-image-width: 160px;
 $card-image-height: 134px;
 $buy-button-height: 40px;
 $buy-button-width: 166px;
+$logo-width: 40px;
+$logo-height: 40px;
 
 // colors  //
 
@@ -15,6 +17,8 @@ $color-primary-text: #060b35;
 $color-secondary--text: #616070;
 $color-primary: #00acdc;
 $color-hover-border: #00acdc;
+$box-shadow-color: #0000000d;
+$cards-description-hover: #34568b;
 
 // Spacing  //
 
@@ -54,3 +58,6 @@ $border-width: 1px;
 
 $star-size: 16px;
 $star-gap: 4px;
+
+// Transitions
+$transition-duration: 300ms;
