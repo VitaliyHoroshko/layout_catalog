@@ -49,16 +49,18 @@ body {
 
 .header__nav {
   display: flex;
+  gap: 20px;
+}
+
+.header__nav-link {
   position: relative;
   text-decoration: none;
   font-family: $font-family;
   font-weight: $font-weight-medium;
   font-size: $font-size-sm;
   color: $color-primary-text;
-  gap: 20px;
   text-transform: uppercase;
   transition-duration: $transition-duration;
-  align-items: center;
   line-height: 60px;
 }
 
@@ -76,7 +78,7 @@ body {
   transition-duration: $transition-duration;
 }
 
-.cards_image {
+.card__img {
   display: flex;
   width: $card-image-width;
   height: $card-image-height;
@@ -176,7 +178,7 @@ body {
   align-items: center;
   margin: $spacing-sm;
   justify-content: center;
-  transition-duration: $transition-duration;
+  transition: background-color $transition-duration;
 }
 
 .card__buy-label {
@@ -187,6 +189,7 @@ body {
   line-height: $line-height-sm;
   font-weight: $font-weight-bold;
   color: $color-white;
+  transition: color $transition-duration;
 }
 
 .card:hover {
@@ -197,7 +200,7 @@ body {
   color: $cards-description-hover;
 }
 
-.header__nav:hover {
+.header__nav-link:hover {
   color: $color-primary;
 }
 
@@ -209,12 +212,12 @@ body {
   color: $color-primary;
 }
 
-.header__nav.is-active {
+.header__nav-link.is-active {
   position: relative;
   color: $color-primary;
 }
 
-.header__nav.is-active::after {
+.header__nav-link.is-active::after {
   content: '';
   position: absolute;
   background-color: $color-primary;
